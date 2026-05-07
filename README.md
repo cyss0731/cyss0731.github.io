@@ -1,1 +1,1 @@
-# cyss0731.github.io
+# cyss0731.github.io/wedding
