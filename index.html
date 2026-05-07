@@ -1,10 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>최유삼 ❤️ 송민영</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, #fffdf8, #f8f4eb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-inner {
+      max-width: 500px;
+    }
+
+    .main-title {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #b08d57;
+      margin-bottom: 15px;
+    }
+
+    .sub-title {
+      font-size: 1.1rem;
+      color: #777;
+      margin-bottom: 40px;
+    }
+
+    .date {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    section {
+      padding: 70px 25px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      color: #b08d57;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .message {
+      max-width: 600px;
+      margin: auto;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .info-box {
+      background: #faf7f1;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .gallery-placeholder {
+      width: 100%;
+      max-width: 500px;
+      height: 250px;
+      background: #f1ede4;
+      border-radius: 16px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      background-color: #b08d57;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      opacity: 0.85;
+    }
+
+    .account-box {
+      margin-top: 20px;
+    }
+
+    .copy-btn {
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 999px;
+      background: #b08d57;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    audio {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 350px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>안녕하세요 👋</h1>
-  <p>내 첫 GitHub 웹사이트입니다.</p>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="main-title">
+        최유삼 ❤️ 송민영
+      </div>
+
+      <div class="sub-title">
+        평생을 함께하고 싶은 사람을 만나<br>
+        소중한 시작을 함께하려 합니다.
+      </div>
+
+      <div class="date">
+        2026.11.22 SUN PM 3:00<br>
+        DMC타워웨딩
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="section-title">Invitation</div>
+
+    <div class="message">
+      서로 다른 길을 걸어온 두 사람이<br>
+      이제 같은 곳을 바라보며 함께 걸어가려 합니다.<br><br>
+
+      기쁜 날, 귀한 걸음으로 함께 축복해주시면<br>
+      더없는 기쁨으로 간직하겠습니다.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Wedding Info</div>
+
+    <div class="info-box">
+      <strong>최유삼 · 송민영</strong><br><br>
+
+      2026년 11월 22일 일요일<br>
+      오후 3시 ~ 4시<br><br>
+
+      DMC타워웨딩 2층<br>
+      서울특별시 마포구 성암로 189
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Gallery</div>
+
+    <div class="gallery-placeholder">
+      추후 웨딩사진이 들어갈 공간입니다
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Location</div>
+
+    <a class="button"
+       href="https://map.naver.com/"
+       target="_blank">
+       네이버 지도 보기
+    </a>
+  </section>
+
+  <section>
+    <div class="section-title">Account</div>
+
+    <div class="account-box">
+      신랑측 계좌<br>
+      국민은행 123-456-78910
+      <br>
+
+      <button class="copy-btn"
+        onclick="copyAccount()">
+        계좌번호 복사
+      </button>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">Music</div>
+
+    <audio controls autoplay loop>
+      <source src="" type="audio/mpeg">
+    </audio>
+
+    <div style="margin-top:10px; color:#999;">
+      추후 음악 파일 추가 가능
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Yousam & Minyoung Wedding
+  </footer>
+
+  <script>
+    function copyAccount() {
+      navigator.clipboard.writeText("123-456-78910");
+      alert("계좌번호가 복사되었습니다.");
+    }
+  </script>
+
 </body>
 </html>
